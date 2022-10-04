@@ -117,7 +117,7 @@ namespace Shopping_Mall
                 if (GetProgress().ToLower() == "y")
                 {
                     Shopping user = new Shopping();
-                    user.Main();
+                    user.ShoppingMall();
                 }
                 else
                 {
@@ -145,6 +145,8 @@ namespace Shopping_Mall
             Console.WriteLine(">>>> Total of all items is " + GetTotal());
             Console.WriteLine("==================================================================");
             /*Console.WriteLine(GetId());*/
+
+
         }
 
         public static int Valid(int id)

@@ -4,7 +4,7 @@
     {
         public class Shopping
         {
-            public void Main()
+            public static void Main(string[] args)
             {
 
                 Console.WriteLine("================================================");
