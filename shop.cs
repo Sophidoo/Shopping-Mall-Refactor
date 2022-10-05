@@ -39,6 +39,7 @@ namespace Shopping_Mall
         }
 
 
+
         public void SetProgress(string progress)
         {
             this.progress = progress;
@@ -47,6 +48,7 @@ namespace Shopping_Mall
         {
             return progress;
         }
+
 
         public void SetSubtotal(int subtotal)
         {
@@ -57,6 +59,7 @@ namespace Shopping_Mall
             return subtotal;
         }
 
+
         public void SetTotal(int total)
         {
             this.total = total;
@@ -65,6 +68,7 @@ namespace Shopping_Mall
         {
             return total;
         }
+
 
 
         public void Items()
@@ -84,7 +88,7 @@ namespace Shopping_Mall
                             itemsBought[i, 0] = "|1        ";
                             itemsBought[i, 1] = "|Laptop       ";
                             itemsBought[i, 2] = "|1000.00       ";
-                            itemsBought[i, 3] = "|" + Convert.ToString(GetQuantity()) + "        |";
+                            itemsBought[i, 3] = "|" + Convert.ToString(GetQuantity()) + "          |";
                             itemsBought[i, 4] = Convert.ToString(1000 * GetQuantity()) + "       ";
 
                             break;
@@ -92,7 +96,7 @@ namespace Shopping_Mall
                             itemsBought[i, 0] = "|2        ";
                             itemsBought[i, 1] = "|Mouse        ";
                             itemsBought[i, 2] = "|50.00         ";
-                            itemsBought[i, 3] = "|" + Convert.ToString(GetQuantity()) + "        |";
+                            itemsBought[i, 3] = "|" + Convert.ToString(GetQuantity()) + "          |";
                             itemsBought[i, 4] = Convert.ToString(50 * GetQuantity()) + "        ";
 
                             break;
@@ -100,7 +104,7 @@ namespace Shopping_Mall
                             itemsBought[i, 0] = "|3        ";
                             itemsBought[i, 1] = "|Keyboard     ";
                             itemsBought[i, 2] = "|500.00        ";
-                            itemsBought[i, 3] = "|" + Convert.ToString(GetQuantity()) + "        |";
+                            itemsBought[i, 3] = "|" + Convert.ToString(GetQuantity()) + "          |";
                             itemsBought[i, 4] = Convert.ToString(500 * GetQuantity()) + "        ";
 
                             break;
@@ -142,6 +146,10 @@ namespace Shopping_Mall
             
         }
 
+
+
+
+
         public void UserItems()
         {
             Console.WriteLine("\n\n\n================================================================");
@@ -163,6 +171,7 @@ namespace Shopping_Mall
 
 
         }
+
 
         public static int Valid(int id)
         {
