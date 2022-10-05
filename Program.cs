@@ -51,13 +51,13 @@
                 Console.WriteLine("|3         |Keyboard          |500.00          |");
                 Console.WriteLine("------------------------------------------------");
 
-                Shop user = new Shop();
+                Shop users = new Shop();
 
                 Console.WriteLine("\n\nPlease input the id of the Item you want to buy, note that you can't buy more than 6 items");
-                user.SetId(Convert.ToInt32(Console.ReadLine()));
+                users.SetId(Convert.ToInt32(Console.ReadLine()));
 
                 Console.WriteLine("\n\nPlease Input the quantity you want to buy?");
-                user.SetQuantity(Convert.ToInt32(Console.ReadLine()));
+                users.SetQuantity(Convert.ToInt32(Console.ReadLine()));
 
                 
 

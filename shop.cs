@@ -82,8 +82,8 @@ namespace Shopping_Mall
                     {
                         case 1:
                             itemsBought[i, 0] = "|1        ";
-                            itemsBought[i, 1] = "|Laptop        ";
-                            itemsBought[i, 2] = "|1000.00        ";
+                            itemsBought[i, 1] = "|Laptop       ";
+                            itemsBought[i, 2] = "|1000.00       ";
                             itemsBought[i, 3] = "|" + Convert.ToString(GetQuantity()) + "        |";
                             itemsBought[i, 4] = Convert.ToString(1000 * GetQuantity()) + "       ";
 
@@ -105,7 +105,7 @@ namespace Shopping_Mall
 
                             break;
                     }
-                Console.WriteLine(GetId());
+                /*Console.WriteLine(GetId());*/
                 }
 
                 SetSubtotal(Convert.ToInt32(itemsBought[i, 4].Trim()));
@@ -116,8 +116,23 @@ namespace Shopping_Mall
 
                 if (GetProgress().ToLower() == "y")
                 {
-                    Shopping user = new Shopping();
-                    user.ShoppingMall();
+                    Console.WriteLine("\n\n Our Available Items:");
+                    Console.WriteLine();
+                    Console.WriteLine("------------------------------------------------");
+                    Console.WriteLine("|id        |Item              |Price($)        |");
+                    Console.WriteLine("------------------------------------------------");
+                    Console.WriteLine("|1         |Laptop            |1000.00         |");
+                    Console.WriteLine("|2         |Mouse             |50.00           |");
+                    Console.WriteLine("|3         |Keyboard          |500.00          |");
+                    Console.WriteLine("------------------------------------------------");
+
+                    /*Shop users = new Shop();*/
+
+                    Console.WriteLine("\n\nPlease input the id of the Item you want to buy, note that you can't buy more than 6 items");
+                    SetId(Convert.ToInt32(Console.ReadLine()));
+
+                    Console.WriteLine("\n\nPlease Input the quantity you want to buy?");
+                    SetQuantity(Convert.ToInt32(Console.ReadLine()));
                 }
                 else
                 {
@@ -144,7 +159,7 @@ namespace Shopping_Mall
             }
             Console.WriteLine(">>>> Total of all items is " + GetTotal());
             Console.WriteLine("==================================================================");
-            /*Console.WriteLine(GetId());*/
+        /*Console.WriteLine(GetId());*/
 
 
         }
